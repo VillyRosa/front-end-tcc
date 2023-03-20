@@ -1,6 +1,6 @@
 import styles from './InputBox.module.css';
 
-function InputBox({ text, name, type, placeholder, icon }) {
+function InputBox({ text, name, type, placeholder, icon, handleChange }) {
 
     function getFocus() {
         document.querySelector(`#${name}`).focus();
@@ -16,6 +16,7 @@ function InputBox({ text, name, type, placeholder, icon }) {
                  name={name}
                  id={name}
                  placeholder={placeholder}
+                 onChange={(e) => handleChange(e.target.value)}
                 />
 
                 <div onClick={getFocus} className={styles.symble}>

@@ -7,9 +7,9 @@ import Login from './components/pages/login/Login';
 import SingIn from './components/pages/signin/SingIn';
 
 function App() {
-
+  
   const [isLogged, setIsLogged] = useState(false);
-
+  
   return (
     <>
     
@@ -18,7 +18,7 @@ function App() {
         <Router>
 
           <Routes>
-            <Route exact path="/" element={<Login/>} />
+            <Route exact path="/" element={<Login setLogged={setIsLogged} />} />
             <Route path="singin" element={<SingIn/>} />
           </Routes>
 
