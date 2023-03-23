@@ -8,17 +8,17 @@ import SingIn from './components/pages/signin/SingIn';
 
 function App() {
   
-  const [isLogged, setIsLogged] = useState(false);
+  const [userAuth, setUserAuth] = useState(false);
   
   return (
     <>
     
-      {!isLogged && (
+      {!userAuth && (
 
         <Router>
 
           <Routes>
-            <Route exact path="/" element={<Login setLogged={setIsLogged} />} />
+            <Route exact path="/" element={<Login setLogged={setUserAuth} />} />
             <Route path="singin" element={<SingIn/>} />
           </Routes>
 
@@ -26,7 +26,7 @@ function App() {
         
       )}
 
-      {isLogged && (
+      {userAuth && (
 
         <Router>
 

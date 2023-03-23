@@ -17,7 +17,9 @@ function Login({ setLogged }) {
     const [typeMessage, setTypeMessage] = useState();
 
 
-    function toggleUser() {
+    function toggleUser(e) {
+
+        e.preventDefault()
 
         setMessage(false);
         setTypeMessage(false);
@@ -38,7 +40,7 @@ function Login({ setLogged }) {
             .then((data) => {
                 console.log(data);
                 if (!data.error) {
-                    setLogged(true);
+                    setLogged(data.data);
                 }
             })
             .catch((err) => console.log(err));
@@ -55,7 +57,7 @@ function Login({ setLogged }) {
 
             {message && <Message text={message} type={typeMessage} />}
 
-            <div className={styles.containerLogin}>
+            <form onSubmit={toggleUser} className={styles.containerLogin}>
 
                 <div className={styles.containerLogo}>
                     <img src={logo} alt="logo" />
@@ -89,7 +91,6 @@ function Login({ setLogged }) {
                     <input 
                      type="submit"
                      value="Login"
-                     onClick={toggleUser}
                     />
 
                     <div className={styles.spacer}>
@@ -103,7 +104,7 @@ function Login({ setLogged }) {
                 </div>
                 
 
-            </div>
+            </form>
 
             <div className={styles.containerImage}>
                 <Player

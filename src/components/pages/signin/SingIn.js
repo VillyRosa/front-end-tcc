@@ -49,8 +49,8 @@ function Login({ setLogged }) {
                 <Player
                     autoplay
                     loop
-                    src="https://assets6.lottiefiles.com/packages/lf20_hzgq1iov.json"
-                    style={{ height: '500px', width: '500px' }}
+                    src="https://assets5.lottiefiles.com/packages/lf20_zI51PdcxCa.json"
+                    style={{ height: '800px', width: '500px' }}
                     background="transparent"
                     speed="0.5"
                 />
