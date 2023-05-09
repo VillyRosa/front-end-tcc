@@ -1,7 +1,8 @@
 import styles from './PostPreview.module.css'
 import account from '../../../assets/images/account.png';
 
-function PostPreview({ title }) {
+function PostPreview({ title, content, datetime }) {
+
     return (
         <div className={styles.card}>
             
@@ -23,17 +24,7 @@ function PostPreview({ title }) {
             <div className={styles.content}>
                 <p className={styles.title}>{title}</p>
                 <div>
-                    <p>html</p>
-                    <p>_____head</p>
-                    <p>__________title Trabalho Ronnie title</p>
-                    <p>_____head</p>
-                    <p>_____body</p>
-                    <p>__________?php</p>
-                    <p>_______________$nome = "Joaquim"</p>
-                    <p>_______________echo $nome;</p>
-                    <p>__________?</p>
-                    <p>_____body</p>
-                    <p>html</p>
+                    {content}
                 </div>
             </div>
 
