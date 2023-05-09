@@ -26,7 +26,7 @@ function Login({ setLogged }) {
 
         if (userEmail && userPassword) {
 
-            fetch('http://localhost/tcc/api-tcc/services/authUser.php', {
+            fetch('http://localhost/tcc/back-end/routes/user/userAuth.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -83,6 +83,15 @@ function Login({ setLogged }) {
                      handleChange={setUserPassword}
                     />
 
+                    <InputBox
+                     text='Repete senha'
+                     type='password'
+                     name='passwordRepeat'
+                     placeholder='Insira sua senha novamente'
+                     icon={<FiLock />}
+                     handleChange={setUserPassword}
+                    />
+
                 </div>
 
                 <div className={styles.buttons}>

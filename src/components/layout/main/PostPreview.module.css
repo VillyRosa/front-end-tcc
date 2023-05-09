@@ -1,0 +1,46 @@
+.card {
+    width: 100%;
+    transition: all 0.5s ease;
+    margin: 50px 0;
+}
+
+.card:hover {
+    z-index: 1000;
+    transform: scale(1.01);
+    padding: 12px;
+    cursor: pointer;
+    background-color: rgb(248, 245, 245);
+    box-shadow: 0 0 6px #505050;
+    border-radius: 12px;
+}
+
+.card .top {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card .top .left {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex;
+}
+
+.card .top .left p {
+    color: #494949;
+}
+
+.card .top .left img {
+    margin-right: 15px;
+}
+
+.card .content {
+    padding-left: 85px;
+}
+
+.card .content .title {
+    font-size: 18px;
+    margin-bottom: 13px;
+}
