@@ -23,6 +23,7 @@
 }
 
 .card .top .left {
+    width: auto;
     display: flex;
     justify-content: space-between;
     align-items: flex;
@@ -30,6 +31,10 @@
 
 .card .top .left p {
     color: #494949;
+}
+
+.card .top .left .hashtag{
+    margin-left: 10px;
 }
 
 .card .top .left img {

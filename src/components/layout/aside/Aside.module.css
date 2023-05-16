@@ -1,0 +1,10 @@
+.aside {
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+
+    margin-left: 75%;
+
+    background-color: transparent;
+    border-left: 1px solid #A3A0A0;
+}

@@ -42,14 +42,17 @@ function Home() {
                          title={post.titulo_post}
                          content={post.conteudo_post}
                          datetime={post.datahora_post}
+                         userpost={post.user_post}
                         />
-
-                )))
+                        
+                    ))
+                )
                 : (
                     <p>Nenhum post encontrado!</p>
                 )
             }
 
+            
         </main>
     );
 }

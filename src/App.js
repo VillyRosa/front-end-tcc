@@ -5,6 +5,7 @@ import NavBar from './components/layout/navbar/NavBar';
 import Home from './components/pages/home/Home';
 import Login from './components/pages/login/Login';
 import SingIn from './components/pages/signin/SingIn';
+import Aside from './components/layout/aside/Aside';
 
 function App() {
   
@@ -35,6 +36,8 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Home/>} />
           </Routes>
+
+          <Aside />
 
         </Router>
 
