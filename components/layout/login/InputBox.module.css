@@ -1,0 +1,40 @@
+.inputContainer {
+    width: 80%;
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.inputBox {
+    width: 100%;
+    background-color: #F1F3F6;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputBox input {
+    padding: 6px 8px;
+    width: 92%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.inputBox .symble {
+    width: 40px;
+    height: 40px;
+
+    background-color: #FF1818;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #FFFFFF;
+    font-size: 20px;
+}

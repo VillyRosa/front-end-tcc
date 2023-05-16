@@ -1,0 +1,76 @@
+.messageContainer {
+    position: absolute;
+    min-width: 300px;
+    min-height: 60px;
+    padding: 10px 10px;
+
+    right: 0;
+    margin: 15px 15px 0 0;
+    border-left: 5px solid #6C6C6C;
+    animation: animation 1s ease;
+    
+    background-color: #DEE1E3;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #333333;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leave {
+    animation: leave 3s ease;
+}
+
+.messageContainer p {
+    width: 90%;
+    color: #222222;
+    font-weight: 405;
+    line-height: 18px;
+}
+
+.messageContainer .icon {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #525252;
+    border-radius: 50%;
+    color: #525252;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success {
+    border-color: #198244;
+    background-color: #A8F1C6;
+}
+
+.danger {
+    border-color: #841712;
+    background-color: #F6A6A3;
+}
+
+.warning {
+    border-color: #895604;
+    background-color: #F7D49D;
+}
+
+@keyframes animation {
+    from {
+        margin-top: -300px;
+    }
+    to {
+        margin-top: 15px;
+    }
+}
+
+@keyframes leave {
+    0% {
+        margin-top: 15px;
+    }
+    100% {
+        margin-top: -300px;
+    }
+}

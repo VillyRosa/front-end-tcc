@@ -1,0 +1,52 @@
+.navBar {
+    position: fixed;
+    width: 15%;
+    height: 100vh;
+    padding: 20px 0 20px 80px;
+
+    background-color: transparent;
+    border-right: 1px solid #A3A0A0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar img {
+    width: 55px;
+    user-select: none;
+}
+
+.navBar ul {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBar ul li {
+    border-radius: 50%;
+    list-style: none;
+    transition: all 0.5s ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBar ul li:hover {
+    transform: translatey(-5px) scale(1.05);
+}
+
+.navBar ul .searchButton {
+    display: none;
+    cursor: pointer;
+}
+
+.navBar ul li a {
+    font-size: 35px;
+    color: #333;
+    cursor: pointer;
+}
